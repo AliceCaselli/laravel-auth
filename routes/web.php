@@ -26,7 +26,7 @@ Route::middleware(['auth', 'verified'])
     ->name('admin.')
     ->group(function () {
         Route::get('/', [DashboardController::class, 'home'])->name('home');
-        Route::resource('post', PostController::class);
+        Route::resource('posts', PostController::class);
     });
 
 // Route::get('/dashboard', function () {

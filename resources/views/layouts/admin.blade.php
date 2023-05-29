@@ -91,7 +91,16 @@
                     Dashboard
                 </div>
                 <div class="list-group list-group-flush">
-                    <a href="" class="list-group-item list-group-item-action">Home</a>
+                    <a href="{{route('admin.home')}}" class="list-group-item list-group-item-action">Home</a>
+                </div>
+            </div>
+
+            <div class="card {{ str_contains(Route::currentRouteName(), 'posts.') ? 'border-primary' : ''}}">
+                <div class="card-header">
+                    Post
+                </div>
+                <div class="list-group list-group-flush">
+                    <a href="{{route('admin.posts.index')}}" class="list-group-item list-group-item-action">Tutti i post</a>
                 </div>
             </div>
 

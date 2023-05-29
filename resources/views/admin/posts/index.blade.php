@@ -4,7 +4,7 @@
     <div class="container">
         <h1>Tutti i post</h1>
 
-        <table class="table table-striped">
+        <table class="table table-striped mb-5">
             <thead>
                 <th>
                     Titolo
@@ -32,5 +32,9 @@
                 @endforeach
             </tbody>
         </table>
+
+        <div class="d-flex justify-content-around">
+            <a href="{{route('admin.posts.create')}}" class="btn btn-primary">Aggiungi un post</a>
+        </div>
     </div>
 @endsection
