@@ -4,7 +4,7 @@
 
 <div class="container">
         <h1 class="mb-3">Crea il Post</h1>
-        <form action="{{route('admin.posts.store', $post)}}" method="POST">
+        <form action="{{route('admin.posts.update', $post)}}" method="POST">
             @csrf
             @method('PUT')
 
